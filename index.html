@@ -64,7 +64,7 @@
       border-radius: 50%;
       opacity: 0.6;
       cursor: pointer;
-      transition: opacity 0.2s, transform 0.2s;
+      transition: opacity 0.2s, transform 0.2s, border-width 0.2s, border-color 0.2s;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
     }
@@ -76,6 +76,9 @@
     .active {
       opacity: 1;
       transform: scale(1.1);
+      border-width: 5px;
+      border-color: #00ff00 !important;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
     }
 
     #controls button,
